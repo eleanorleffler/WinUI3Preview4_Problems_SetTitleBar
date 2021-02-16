@@ -1,0 +1,54 @@
+**Describe the bug**
+
+In WinUI3 Preview4, using the "ExtendsContentIntoTitleBar" removes the standard action buttons on the window (minimize, maximize, and close).
+
+**Steps to reproduce the bug**
+1. Clone the [WinUI3 Preview 4 Problems Set Title Bar repository](https://github.com/eleanorleffler/WinUI3Preview4_Problems_SetTitleBar).
+2. Go to the SetTitleBarWinUIPreview4 folder.
+3. Open the SetTitleBarWinUIPreview4 solution in Visual Studio 2019 Preview.
+4. Build and run with Debug x64.
+5. Click the "Set Title Bar On" / "Set Title Bar Off" button to update the window's Title Bar using the "ExtendsContentIntoTitleBar" and "SetTitleBar" methods.
+
+**Expected behavior**
+
+We expect there to be a programmatic way to customize the Title Bar and for the customization to keep the standard window buttons.
+
+**Screenshots**
+
+Current Behavior
+
+**Version Info**
+
+NuGet package version: 
+
+[Microsoft.WinUI 3.0.0-preview4.210210.4]
+
+Targeting:
+Target: Universal Windows
+Target version: Windows 10, version 1809 (10.0; Build 17763)
+Min version: Windows 10, version 1803 (10.0; Build 17134)
+
+Windows app type:
+| UWP              | Win32            |
+| :--------------- | :--------------- |
+| 		Yes 	   |  				  |
+
+| Windows 10 version                  | Saw the problem? |
+| :--------------------------------- | :-------------------- |
+| Insider Build (xxxxx)              | 						 |
+| May 2020 Update (19041)            | 						 |
+| November 2019 Update (18363)       | 						 |
+| May 2019 Update (18362)            | 						 |
+| October 2018 Update (17763)        | 			Yes			 |
+| April 2018 Update (17134)          | 						 |
+| Fall Creators Update (16299)       | 						 |
+| Creators Update (15063)            | 						 |
+
+| Device form factor | Saw the problem? |
+| :----------------- | :--------------- |
+| Desktop            | 		Yes			|
+| Xbox               | 					|
+| Surface Hub        | 					|
+| IoT                | 					|
+
+**Additional context**
